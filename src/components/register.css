@@ -1,0 +1,41 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+.card {
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+}
+.brand-logo {
+    font-family: "Billabong", cursive;
+    font-size: 48px;
+    color: #262626;
+}
+.form-control {
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+.divider:not(:empty)::before {
+    margin-right: 0.75em;
+}
+.divider:not(:empty)::after {
+    margin-left: 0.75em;
+}
+
+.cc {
+    max-width: 350px;
+    width: 100%;
+}

@@ -1,12 +1,21 @@
+import { useEffect, useState } from "react";
 import "./register.css";
-function Register() {
+
+export function Register() {
+    const [a, setA] = useState(0);
+
+    useEffect(()=>{
+        console.log('working')
+    }, [])
+
     return (
         <div className="container d-flex flex-column align-items-center justify-content-center min-vh-100">
-            <div
-                className="card p-4"
-                style={{ maxWidth: "350px", width: "100%" }}
-            >
-                <div className="text-center mb-3 brand-logo">WonderGram</div>
+            <h1>{a}</h1>
+            <button onClick={() => setA(a + 2)}>Forward</button>
+            <div className="cc card p-4">
+                <div className="text-center mb-3 brand-logo d-flex align-items-center">
+                    <i class="text-info fs-2 bi bi-fan"></i>WonderGram
+                </div>
 
                 <p className="text-center text-muted small">
                     Sign up to see photos and videos from your friends.
@@ -18,13 +27,11 @@ function Register() {
                         <i className="bi bi-facebook me-1"></i> Log in with
                         Facebook
                     </button>
-                    <button className="btn btn-primary btn-sm">
-                        <i className="bi bi-google me-1"></i> Log in with
-                        Google
+                    <button className="btn btn-danger btn-sm">
+                        <i className="bi bi-google me-1"></i> Log in with Google
                     </button>
                 </div>
 
-                {/* Divider */}
                 <div className="divider small text-muted">OR</div>
 
                 {/* Registration Form */}
@@ -80,16 +87,13 @@ function Register() {
             </div>
 
             {/* Login Redirect */}
-            <div
-                className="card p-3 text-center mt-3"
-                style={{ maxWidth: "350px", width: "100%" }}
-            >
+            <div className="card p-3 text-center mt-3">
                 <p className="mb-0 small">
                     Have an account? <a href="#">Log in</a>
                 </p>
             </div>
 
-            {/* App Store Links (optional like Instagram) */}
+            {/* Stores to download app */}
             <div className="text-center mt-3">
                 <p className="small mb-1">Get the app.</p>
                 <div className="d-flex justify-content-center gap-2">
@@ -109,4 +113,4 @@ function Register() {
     );
 }
 
-export default Register;
+// export default Register;

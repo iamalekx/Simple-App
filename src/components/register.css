@@ -10,6 +10,7 @@ body {
     font-family: "Billabong", cursive;
     font-size: 48px;
     color: #262626;
+    font-weight: bolder;
 }
 .form-control {
     background: #fafafa;

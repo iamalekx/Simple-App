@@ -1,6 +1,15 @@
 import "./landoproject.css";
 import { Button } from './button'
 import landing from '../images/landing1.png'
+import apple from '../logos/apple.png'
+import amazon from '../logos/social.png'
+import microsoft from '../logos/microsoft.png'
+import behance from '../logos/behance.png'
+import huawei from '../logos/huawei.png'
+import spotify from '../logos/spotify.png'
+import wordpress from '../logos/wordpress.png'
+import js from '../logos/js.png'
+import nike from '../logos/nike.png' 
 
 export function LandoProject() {
     return (
@@ -30,19 +39,47 @@ export function LandoProject() {
                     </div>
                 </div>
             </nav>
-            <section className="body-cont row d-flex my-5 text-start">
-                <div className="left-body d-flex flex-column justify-content-start col-12 col-md-6">
+            <section className="body-cont row d-flex my-4 text-start">
+                <div className="left-body d-flex flex-column justify-content-start col-12 col-md-6 gap-4">
                     <p className="fs-5 fw-bold text-secondary">
                         - FREE 30 DAYS TRIAL
                     </p>
                     <h1 className="fw-bolder project_heading">
                         The best way to showcase your project
                     </h1>
+                    <h2 className="fs-4 fw-bold">
+                        Here you can put a short description about your project
+                    </h2>
+                    <div className="try d-flex gap-5">
+                        <Button className="try_free fw-bold">
+                            Try for free
+                        </Button>
+                        <Button className="see_how_it_works fw-bold">
+                            See how it works
+                        </Button>
+                    </div>
                 </div>
                 <div className="right-body d-flex align-items-center justify-content-center col-12 col-md-6">
                     <img className="img-fluid" src={landing} alt="" />
                 </div>
             </section>
+            <footer className="d-flex flex-column align-items-center justify-content-center">
+                <p className="fs-5 fw-bold footer_description">
+                    Trusted by individuals and teams at the world's best
+                    companies
+                </p>
+                <div className="d-flex gap-5 logos">
+                    <img src={apple} alt="apple" />
+                    <img src={js} alt="js" className="rounded-circle" />
+                    <img src={spotify} alt="spotify" className="rounded-circle" />
+                    <img src={amazon} alt="amazon" className="rounded-circle" />
+                    <img src={microsoft} alt="microsoft" />
+                    <img src={behance} alt="behance" />
+                    <img src={huawei} alt="huawei" />
+                    <img src={nike} alt="nike" className="rounded-circle" />
+                    <img src={wordpress} alt="wordpress" className="rounded-circle" />
+                </div>
+            </footer>
         </div>
     );
 }

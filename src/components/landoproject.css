@@ -25,3 +25,13 @@ h1 {
 .right-body img{
     width: 100%;
 }
+
+.see_how_it_works {
+    color: black;
+    background-color: transparent;
+    border: 0.5px solid
+}
+
+.footer_description {
+    width:35%;
+}

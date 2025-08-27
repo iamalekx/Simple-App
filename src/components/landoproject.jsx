@@ -1,15 +1,15 @@
 import "./landoproject.css";
-import { Button } from './button'
-import landing from '../images/landing1.png'
-import apple from '../logos/apple.png'
-import amazon from '../logos/social.png'
-import microsoft from '../logos/microsoft.png'
-import behance from '../logos/behance.png'
-import huawei from '../logos/huawei.png'
-import spotify from '../logos/spotify.png'
-import wordpress from '../logos/wordpress.png'
-import js from '../logos/js.png'
-import nike from '../logos/nike.png' 
+import { Button } from "./button";
+import landing from "../images/landing1.png";
+import apple from "../logos/apple.png";
+import amazon from "../logos/social.png";
+import microsoft from "../logos/microsoft.png";
+import behance from "../logos/behance.png";
+import huawei from "../logos/huawei.png";
+import spotify from "../logos/spotify.png";
+import wordpress from "../logos/wordpress.png";
+import js from "../logos/js.png";
+import nike from "../logos/nike.png";
 
 export function LandoProject() {
     return (
@@ -68,16 +68,53 @@ export function LandoProject() {
                     Trusted by individuals and teams at the world's best
                     companies
                 </p>
-                <div className="d-flex gap-5 logos">
-                    <img src={apple} alt="apple" />
-                    <img src={js} alt="js" className="rounded-circle" />
-                    <img src={spotify} alt="spotify" className="rounded-circle" />
-                    <img src={amazon} alt="amazon" className="rounded-circle" />
-                    <img src={microsoft} alt="microsoft" />
-                    <img src={behance} alt="behance" />
-                    <img src={huawei} alt="huawei" />
-                    <img src={nike} alt="nike" className="rounded-circle" />
-                    <img src={wordpress} alt="wordpress" className="rounded-circle" />
+                <div className="logo-scroll-container">
+                    <div className="d-flex gap-5 logo-scroll">
+                        <img src={apple} alt="apple" />
+                        <img src={js} alt="js" className="rounded-circle" />
+                        <img
+                            src={spotify}
+                            alt="spotify"
+                            className="rounded-circle"
+                        />
+                        <img
+                            src={amazon}
+                            alt="amazon"
+                            className="rounded-circle"
+                        />
+                        <img src={microsoft} alt="microsoft" />
+                        <img src={behance} alt="behance" />
+                        <img src={huawei} alt="huawei" />
+                        <img src={nike} alt="nike" className="rounded-circle" />
+                        <img
+                            src={wordpress}
+                            alt="wordpress"
+                            className="rounded-circle"
+                        />
+
+                        {/* duplicate for scrolling */}
+                        <img src={apple} alt="apple" />
+                        <img src={js} alt="js" className="rounded-circle" />
+                        <img
+                            src={spotify}
+                            alt="spotify"
+                            className="rounded-circle"
+                        />
+                        <img
+                            src={amazon}
+                            alt="amazon"
+                            className="rounded-circle"
+                        />
+                        <img src={microsoft} alt="microsoft" />
+                        <img src={behance} alt="behance" />
+                        <img src={huawei} alt="huawei" />
+                        <img src={nike} alt="nike" className="rounded-circle" />
+                        <img
+                            src={wordpress}
+                            alt="wordpress"
+                            className="rounded-circle"
+                        />
+                    </div>
                 </div>
             </footer>
         </div>

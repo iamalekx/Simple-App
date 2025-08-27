@@ -4,7 +4,6 @@
     align-items: center;
 } */
 
-
 a {
     color: black;
 }
@@ -22,16 +21,59 @@ h1 {
     font-size: clamp(1rem, 6vw, 120px);
 }
 
-.right-body img{
+.right-body img {
     width: 100%;
 }
 
 .see_how_it_works {
     color: black;
     background-color: transparent;
-    border: 0.5px solid
+    border: 0.5px solid;
 }
 
 .footer_description {
-    width:35%;
+    width: 35%;
+}
+
+.logo-scroll-container {
+    width: 50%;
+    overflow: hidden;
+    padding: 1rem 0;
+    /* Fading left/right edges */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+.logo-scroll {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    /* Animation: infinite leftward scroll */
+    animation: logo-scroll-move 25s linear infinite;
+}
+
+.logo-scroll img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    /* Optionally add margin, shadow or filter */
+    /* filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1)); */
+}
+
+/* Animate the group smoothly to the left */
+@keyframes logo-scroll-move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-scroll img {
+        height: 24px;
+        gap: 1rem;
+    }
 }

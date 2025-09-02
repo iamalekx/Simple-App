@@ -11,7 +11,6 @@ import wordpress from "../logos/wordpress.png";
 import js from "../logos/js.png";
 import nike from "../logos/nike.png";
 
-
 export function LandoProject() {
     return (
         <div className="w-100">

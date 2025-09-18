@@ -66,7 +66,7 @@ export function LandoProject() {
             <footer className="d-flex flex-column align-items-center justify-content-center">
                 <p className="fs-5 fw-bold footer_description">
                     Trusted by individuals and teams at the world's best
-                    companies
+                    companies.
                 </p>
                 <div className="logo-scroll-container">
                     <div className="d-flex gap-5 logo-scroll">
